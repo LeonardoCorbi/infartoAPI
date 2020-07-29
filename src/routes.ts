@@ -18,7 +18,8 @@ const infarto = [
     resumo : 'Conheça os sinais e sintomas do infarto.',
   },
 ]
-// 29:57
+
+// 01:02:58
 
 routes.post('/infarto',)
 routes.post('/alimentacao',)
