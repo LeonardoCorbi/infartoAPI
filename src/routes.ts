@@ -19,7 +19,7 @@ const infarto = [
   },
 ]
 
-// 01:02:58
+// 01:16:51
 
 routes.post('/infarto',)
 routes.post('/alimentacao',)
