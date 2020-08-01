@@ -1,45 +1,35 @@
 import express from 'express'
+import knex from './database/connection'
+
+import ArticlesCreateController from './controllers/ArticlesCreateController'
+const articlesCreateController = new ArticlesCreateController()
+
+import ArticleSearchAllController from './controllers/ArticleSearchAllController'
+const articleSearchAllController = new ArticleSearchAllController()
+
+import ArticleSearchSingleController from './controllers/ArticleSearchSingleController'
+const articleSearchSingleController = new ArticleSearchSingleController()
 
 const routes = express.Router()
 
-const infarto = [
-  {
-    id : 1 ,
-    titulo : 'A principal causa do infarto' ,
-    imagem : 'img.com',
-    conteudo : 'Saiba os principais motivos da ocorrência do infarto.',
-    resumo : 'Saiba os principais motivos da ocorrência do infarto.',
-  },
-  {
-    id : 2 ,
-    titulo : 'Sintomas do infarto' ,
-    imagem : 'img.com',
-    conteudo : 'Conheça os sinais e sintomas do infarto.',
-    resumo : 'Conheça os sinais e sintomas do infarto.',
-  },
-]
-
 // 01:16:51
 
-routes.post('/infarto',)
-routes.post('/alimentacao',)
-routes.post('/exercicio',)
-routes.post('/tratamento',)
+routes.post('/infarto', articlesCreateController.createInfarto)
+routes.post('/alimentacao', articlesCreateController.createAlimentacao)
+routes.post('/exercicio', articlesCreateController.createExercicio)
+routes.post('/tratamento', articlesCreateController.createTratamento)
+routes.post('/author', )
 
-routes.get('/infarto',)
-routes.get('/alimentacao',)
-routes.get('/exercicio',)
-routes.get('/tratamento',)
+routes.get('/infarto', articleSearchAllController.searchInfarto)
+routes.get('/alimentacao', articleSearchAllController.searchAlimentacao)
+routes.get('/exercicio', articleSearchAllController.searchExercicio)
+routes.get('/tratamento', articleSearchAllController.searchTratamento)
+routes.get('/author', )
 
-routes.get('/infarto/:id', (request, response) => {
-  const requiredId = Number(request.params.id)
-
-  const article = infarto.filter(item => item.id === requiredId)
-
-  return response.json(article)
-})
-routes.get('/alimentacao/:id',)
-routes.get('/exercicio/:id',)
-routes.get('/tratamento/:id',)
+routes.get('/infarto/:id', articleSearchSingleController.singleInfarto)
+routes.get('/alimentacao/:id', articleSearchSingleController.singleAlimentacao)
+routes.get('/exercicio/:id', articleSearchSingleController.singleExercicio)
+routes.get('/tratamento/:id', articleSearchSingleController.singleTratamento)
+routes.get('/author/:id', )
 
 export default routes
