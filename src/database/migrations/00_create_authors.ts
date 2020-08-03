@@ -6,6 +6,7 @@ export async function up(knex: Knex) {
     table.string('name').notNullable()
     table.string('role').notNullable()
     table.string('image').notNullable()
+    table.string('password').notNullable()
   })
 }
 

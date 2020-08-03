@@ -7,17 +7,19 @@ class ArticlesCreateController {
       title,
       image,
       content,
-      summary
+      summary,
+      authorId
     } = request.body
 
     const article = await knex('infarto').insert({
       title,
       image,
       content,
-      summary
+      summary,
+      authorId
     })
 
-    response.json(article)
+    return response.json(article)
   }
 
   async createAlimentacao(request: Request, response: Response) {
@@ -25,17 +27,19 @@ class ArticlesCreateController {
       title,
       image,
       content,
-      summary
+      summary,
+      authorId
     } = request.body
 
     const article = await knex('alimentacao').insert({
       title,
       image,
       content,
-      summary
+      summary,
+      authorId
     })
 
-    response.json(article)
+    return response.json(article)
   }
 
   async createExercicio(request: Request, response: Response) {
@@ -43,17 +47,19 @@ class ArticlesCreateController {
       title,
       image,
       content,
-      summary
+      summary,
+      authorId
     } = request.body
 
     const article = await knex('exercicio').insert({
       title,
       image,
       content,
-      summary
+      summary,
+      authorId
     })
 
-    response.json(article)
+    return response.json(article)
   }
 
   async createTratamento(request: Request, response: Response) {
@@ -61,17 +67,19 @@ class ArticlesCreateController {
       title,
       image,
       content,
-      summary
+      summary,
+      authorId
     } = request.body
 
     const article = await knex('tratamento').insert({
       title,
       image,
       content,
-      summary
+      summary,
+      authorId
     })
 
-    response.json(article)
+    return response.json(article)
   }
 
 }
