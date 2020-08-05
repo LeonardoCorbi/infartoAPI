@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "12.x"
+  }
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev src/server.ts",
@@ -13,7 +16,7 @@
 
   },
   "keywords": [],
-  "author": "",
+  "author": "Gabrielly Vicente e Leonardo Corbi",
   "license": "ISC",
   "dependencies": {
     "@types/cors": "^2.8.6",
