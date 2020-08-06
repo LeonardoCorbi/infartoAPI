@@ -30,17 +30,7 @@ routes.post('/tratamento', articlesCreateController.createTratamento)
 routes.post('/authorAdmLeoLeo', authorCreatorController.create)
 
 routes.get('/', (request, response) => {
-  const infarto = knex('infarto').select('*')
-  const alimentacao = knex('alimentacao').select('*')
-  const exercicio = knex('exercicio').select('*')
-  const tratamento = knex('tratamento').select('*')
-  
-  return response.json({
-    infarto,
-    alimentacao,
-    exercicio,
-    tratamento
-  })
+  return response.json({ ok: 'ok'})
 })
 routes.get('/infarto', articleSearchAllController.showInfarto)
 routes.get('/alimentacao', articleSearchAllController.showAlimentacao)
