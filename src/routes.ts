@@ -1,4 +1,4 @@
-import express from 'express'
+import express, { response } from 'express'
 import knex from './database/connection'
 
 import ArticlesCreateController from './controllers/ArticlesCreateController'
@@ -29,6 +29,19 @@ routes.post('/exercicio', articlesCreateController.createExercicio)
 routes.post('/tratamento', articlesCreateController.createTratamento)
 routes.post('/authorAdmLeoLeo', authorCreatorController.create)
 
+routes.get('/', (request, response) => {
+  const infarto = knex('infarto').select('*')
+  const alimentacao = knex('alimentacao').select('*')
+  const exercicio = knex('exercicio').select('*')
+  const tratamento = knex('tratamento').select('*')
+  
+  return response.json({
+    infarto,
+    alimentacao,
+    exercicio,
+    tratamento
+  })
+})
 routes.get('/infarto', articleSearchAllController.showInfarto)
 routes.get('/alimentacao', articleSearchAllController.showAlimentacao)
 routes.get('/exercicio', articleSearchAllController.showExercicio)
