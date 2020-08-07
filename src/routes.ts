@@ -1,5 +1,4 @@
 import express, { response } from 'express'
-import knex from './database/connection'
 
 import ArticlesCreateController from './controllers/ArticlesCreateController'
 const articlesCreateController = new ArticlesCreateController()
@@ -20,8 +19,6 @@ import AuthorSearchSingleController from './controllers/AuthorSearchSingleContro
 const authorSearchSingleController = new AuthorSearchSingleController()
 
 const routes = express.Router()
-
-// 01:40:57
 
 routes.post('/infarto', articlesCreateController.createInfarto)
 routes.post('/alimentacao', articlesCreateController.createAlimentacao)
