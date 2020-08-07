@@ -4,7 +4,7 @@ export async function seed(knex: Knex) {
   await knex('exercicio').insert([
     {
       title: 'Rotina de exercícios físicos',
-      image: 'https://fitnesshaiderer.at/wp-content/uploads/2018/06/slide4-1024x683.jpg',
+      image: 'https://coracaoalerta.herokuapp.com/images/exercicio_1.jpeg',
       content: 'Muitos indivíduos têm padrões diários, regulares e distintos para comer, e comummente muitos tem entre três e quatro refeições diárias, com lanches consistindo como pequenos montantes de comida que consumida entre as refeições. O objectivo de uma alimentação saudável é, há muito tempo, uma importante preocupação de diferentes pessoas e culturas. Juntamente com outras práticas, o jejum, a dieta e o vegetarianismo são técnicas empregadas por pessoas (e encorajadas por sociedades) para aumentar a longevidade e a saúde. Muitas religiões promovem o vegetabilismo considerando errado o consumo de animais. Os nutricionistas concordam que em vez de se deleitar em três refeições diárias, é muito mais saudável e fácil para o metabolismo comer 5 pequenas refeições a cada dia (um maior número de refeições pequenas gera uma melhor digestão; facilita para o intestino o depósito das excretas; e visto que refeições maiores são mais resistentes ao trato digestivo e podem precisar de laxativos). O ato de comer também pode ser uma maneira de ganhar dinheiro, como na ingestão competitiva.[2] ra o coração é interrompido e o coração não recebe sangue e oxigênio suficientes para se manter em atividade. Com isso, o músculo cardíaco morre ou é danificado. Pacientes diabéticos, com hipertensão arterial, obesos e que sofrem de estressem e depressão, assim como quem tem arritmia cardíaca, completam o grupo de risco da doença. Não são todas as pessoas que sofrem um infarto que chegam ao óbito. Para aumentar as chances de sobrevivência, é indispensável o atendimento médico com rapidez.',
       summary: 'Hábitos saudáveis para se recuperar.',
       category: 'exercicio',
@@ -12,7 +12,7 @@ export async function seed(knex: Knex) {
     },
     {
       title: 'A importância dos exercícios físicos',
-      image: 'https://www.retirementconcepts.com/wp-content/uploads/active-swimming-seniors-1024x683.jpeg',
+      image: 'https://coracaoalerta.herokuapp.com/images/exercicio_2.jpg',
       content: 'Dor no peito é o principal sintoma do infarto. O paciente também pode sentir dores estendidas para braços, ombros e pescoço. Na mulher, os sintomas podem ser diferentes: respiração curta, dor na mandíbula, náusea, dor de estômago e sensação de desconforto no peito. Esses sinais duram aproximadamente 20 minutos e podem ir e voltar. Pacientes diabéticos geralmente não apresentam sintomas, mas também podem ser acometidos pela doença. ',
       summary: 'Fazer exercícios ajudam a prevenir o infarto?',
       category: 'exercicio',
@@ -20,7 +20,7 @@ export async function seed(knex: Knex) {
     },
     {
       title: 'Quais são os exercícios ideais',
-      image: 'https://www.vivalnk.com/hubfs/shutterstock_205525585-1024x683.jpg',
+      image: 'https://coracaoalerta.herokuapp.com/images/exercicio_3.jpg',
       content: 'Hipertensão, colesterol elevado e diabetes são grandes fatores de risco para o infarto. Por isso, não devem ser olhados isoladamente, mas como partes de uma doença muito maior e irreversível. Além disso, depois de um infarto agudo do miocárdio, o paciente pode desenvolver a arritmia cardíaca ou parada cardiorrespiratória. Saiba mais sobre elas: O tratamento vai depender da gravidade do infarto. Após o ocorrido, os médicos vão agir para diminuir a lesão e evitar que o doente apresente complicações. Em geral, o atendimento é feito no pronto-socorro e as primeiras ações da equipe médica são: ',
       summary: 'Conheça os exercícios aliados para quem quer perder peso.',
       category: 'exercicio',
@@ -28,7 +28,7 @@ export async function seed(knex: Knex) {
     },
     {
       title: 'Hábitos que melhoram sua qualidade de vida',
-      image: 'https://mpt.135editor.com/mmbiz_jpg/9D8SgFspZHlFIsngf4ficSgWnrKKJRagvCqRtgh75YZ7ZPqIzp2VAykt3mEqP9icPJhpwBq6QtNIkgHELbA8PgVg/640?wx_fmt=jpeg&wx_co=1',
+      image: 'https://coracaoalerta.herokuapp.com/images/exercicio_4.jpg',
       content: 'Marque no relógio: no tempo que você levará para ler esta reportagem, pelo menos dois brasileiros sucumbirão ao infarto, a causa de morte número 1 em nosso país e em boa parte do mundo. Esse cenário catastrófico é motivado pelo descontrole de fatores que patrocinam o entupimento das coronárias, as artérias que irrigam o coração, como o excesso de peso, o tabagismo, a pressão alta e altas taxas decolesterol e glicemia. Porém, chama a atenção a persistente lentidão com que as pessoas em geral (e, em certa medida, até profissionais de saúde) suspeitam dos sintomas de algo crítico no peito.',
       summary: 'Conheça os exercícios aliados para quem quer perder peso.',
       category: 'exercicio',
