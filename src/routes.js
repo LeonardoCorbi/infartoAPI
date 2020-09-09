@@ -17,7 +17,6 @@ const authorSearchAllController = new AuthorSearchAllController_1.default();
 const AuthorSearchSingleController_1 = __importDefault(require("./controllers/AuthorSearchSingleController"));
 const authorSearchSingleController = new AuthorSearchSingleController_1.default();
 const routes = express_1.default.Router();
-// 01:40:57
 routes.post('/infarto', articlesCreateController.createInfarto);
 routes.post('/alimentacao', articlesCreateController.createAlimentacao);
 routes.post('/exercicio', articlesCreateController.createExercicio);

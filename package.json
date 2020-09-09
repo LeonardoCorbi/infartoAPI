@@ -14,7 +14,6 @@
     "knex:seed": "knex --knexfile knexfile.ts seed:run",
     "knex:down": "knex --knexfile knexfile.ts migrate:down",
     "knex:rollback": "knex --knexfile knexfile.ts migrate:rollback --all"
-
   },
   "keywords": [],
   "author": "Gabrielly Vicente e Leonardo Corbi",
